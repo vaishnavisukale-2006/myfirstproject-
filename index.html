@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="My First Website - A clean, modern, and interactive beginner-friendly website built with HTML, CSS, and JavaScript.">
+  <title>My First Website | Modern & Interactive</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons for modern visuals -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Animated Gradient Orbs -->
+  <div class="bg-glow orb-1"></div>
+  <div class="bg-glow orb-2"></div>
+  <div class="bg-glow orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">🚀</span>
+        <span class="logo-text">My First <span class="gradient-text">Website</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#playground" class="nav-link"><i class="fa-solid fa-gamepad"></i> Playground</a>
+        <a href="#contact" class="nav-link"><i class="fa-regular fa-envelope"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-text-block">
+          <div class="greeting-badge" id="greeting-badge">
+            <span class="badge-dot"></span>
+            <span id="dynamic-greeting">Welcome to my journey!</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, World! <br>
+            I'm building the <span class="gradient-text">Future Web</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            Welcome to my very first website. I built this from scratch using
+            <strong>HTML5</strong> for structure, <strong>CSS3</strong> for modern styling, and
+            <strong>JavaScript</strong> for interactivity!
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#playground" class="btn btn-primary">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Try Interactive Demo
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <i class="fa-solid fa-compass"></i> Learn More
+            </a>
+          </div>
+
+          <!-- Quick Stats Row -->
+          <div class="hero-stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Handcrafted Code</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Core Technologies</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">0</span>
+              <span class="stat-label">External Bundlers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-block">
+          <div class="glass-showcase-card">
+            <div class="code-window-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">welcome.js</span>
+            </div>
+            <div class="code-snippet-body">
+              <pre><code><span class="code-keyword">const</span> creator = {
+  <span class="code-prop">name</span>: <span class="code-str">"New Web Developer"</span>,
+  <span class="code-prop">status</span>: <span class="code-str">"Learning & Building 🚀"</span>,
+  <span class="code-prop">stack</span>: [<span class="code-str">"HTML"</span>, <span class="code-str">"CSS"</span>, <span class="code-str">"JS"</span>],
+  <span class="code-prop">mission</span>: <span class="code-str">"Create awesome web apps!"</span>
+};
+
+<span class="code-keyword">function</span> <span class="code-func">startJourney</span>() {
+  console.<span class="code-func">log</span>(<span class="code-str">"Every expert was once a beginner."</span>);
+}</code></pre>
+            </div>
+            <div class="card-footer-badge">
+              <i class="fa-solid fa-sparkles"></i> Clean & Modern Starter
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">My Coding <span class="gradient-text">Journey</span></h2>
+          <p class="section-desc">Here is a little background on why I created this website and what I'm learning.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>How It Started</h3>
+            <p>
+              I decided to take the leap into web development. Instead of just reading tutorials,
+              I wanted to build a real, functioning, responsive webpage with my own hands.
+            </p>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>What This Project Has</h3>
+            <p>
+              This website combines clean semantic structure, custom CSS variables, responsive
+              flexbox & grid layouts, dark mode with local storage, and real JavaScript mini-apps!
+            </p>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Future Goals</h3>
+            <p>
+              I am continuing to practice by adding more features, exploring CSS animations, mastering
+              DOM manipulation, and eventually building full-stack web applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Fun Fact Generator Box -->
+        <div class="fun-fact-box glass-card text-center">
+          <div class="fun-fact-icon"><i class="fa-regular fa-lightbulb"></i></div>
+          <h4 class="fun-fact-heading">Web Dev Fun Fact</h4>
+          <p id="fun-fact-text" class="fun-fact-text">"Did you know? The first website ever made is still online at
+            info.cern.ch!"</p>
+          <button id="new-fact-btn" class="btn btn-outline">
+            <i class="fa-solid fa-shuffle"></i> Give Me Another Fact!
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">My Tech Stack</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+          <p class="section-desc">The core building blocks used to create this modern website.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-card glass-card">
+            <div class="skill-header">
+              <div class="skill-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+              <div>
+                <h3 class="skill-title">HTML5</h3>
+                <span class="skill-category">Structure & Semantics</span>
+              </div>
+            </div>
+            <p class="skill-desc">Provides semantic elements, accessibility, SEO optimization, and structured page
+              content.</p>
+            <div class="progress-bar-container">
+              <div class="progress-info">
+                <span>Mastery</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill html-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="skill-card glass-card">
+            <div class="skill-header">
+              <div class="skill-icon css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+              <div>
+                <h3 class="skill-title">CSS3</h3>
+                <span class="skill-category">Styling & Design</span>
+              </div>
+            </div>
+            <p class="skill-desc">Custom properties, flexbox, CSS grid, smooth transitions, glassmorphism, and
+              responsive layouts.</p>
+            <div class="progress-bar-container">
+              <div class="progress-info">
+                <span>Mastery</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill css-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-card glass-card">
+            <div class="skill-header">
+              <div class="skill-icon js-icon"><i class="fa-brands fa-js"></i></div>
+              <div>
+                <h3 class="skill-title">JavaScript</h3>
+                <span class="skill-category">Logic & Interactivity</span>
+              </div>
+            </div>
+            <p class="skill-desc">DOM manipulation, event listeners, localStorage, dynamic UI updates, and theme
+              toggling.</p>
+            <div class="progress-bar-container">
+              <div class="progress-info">
+                <span>Mastery</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill js-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-card glass-card">
+            <div class="skill-header">
+              <div class="skill-icon design-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <div>
+                <h3 class="skill-title">Responsive Design</h3>
+                <span class="skill-category">Mobile & Desktop</span>
+              </div>
+            </div>
+            <p class="skill-desc">Fluid layouts that look great on any screen size from mobile phones to ultra-wide
+              displays.</p>
+            <div class="progress-bar-container">
+              <div class="progress-info">
+                <span>Mastery</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill design-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Playground Section -->
+    <section id="playground" class="section playground-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Hands-On Demos</span>
+          <h2 class="section-title">Interactive <span class="gradient-text">Playground</span></h2>
+          <p class="section-desc">Try out these live interactive features coded with pure Vanilla JavaScript!</p>
+        </div>
+
+        <div class="playground-grid">
+
+          <!-- Widget 1: Interactive Click Counter -->
+          <div class="playground-card glass-card" id="widget-counter">
+            <div class="widget-header">
+              <div class="widget-badge"><i class="fa-solid fa-arrow-up-1-9"></i> Widget 1</div>
+              <h3>Interactive Counter</h3>
+              <p>Practice with JavaScript event listeners and state updates.</p>
+            </div>
+            <div class="counter-display">
+              <span id="counter-value" class="counter-number">0</span>
+              <span id="counter-milestone" class="counter-milestone-text">Click the buttons to start!</span>
+            </div>
+            <div class="counter-controls">
+              <button id="counter-decrement" class="btn btn-icon" title="Decrease">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <button id="counter-reset" class="btn btn-secondary" title="Reset Counter">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+              </button>
+              <button id="counter-increment" class="btn btn-primary" title="Increase">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Widget 2: Live Palette & Card Customizer -->
+          <div class="playground-card glass-card" id="widget-colors">
+            <div class="widget-header">
+              <div class="widget-badge"><i class="fa-solid fa-palette"></i> Widget 2</div>
+              <h3>Color Palette Generator</h3>
+              <p>Generate fresh vibrant color schemes and copy HEX values.</p>
+            </div>
+            <div class="palette-preview-box" id="palette-preview-box">
+              <span id="palette-preview-text" class="palette-preview-text">Live Color Preview</span>
+            </div>
+            <div class="palette-swatches-grid" id="palette-swatches">
+              <!-- Dynamically generated swatches -->
+            </div>
+            <div class="palette-controls">
+              <button id="generate-palette-btn" class="btn btn-primary btn-full">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Generate New Palette
+              </button>
+            </div>
+          </div>
+
+          <!-- Widget 3: Daily Coding Goals / To-Do Tracker -->
+          <div class="playground-card glass-card goals-widget" id="widget-goals">
+            <div class="widget-header">
+              <div class="widget-badge"><i class="fa-solid fa-list-check"></i> Widget 3</div>
+              <h3>Coding Goals Tracker</h3>
+              <p>Add your daily coding tasks. Persisted via browser LocalStorage!</p>
+            </div>
+            <form id="goal-form" class="goal-input-form">
+              <input type="text" id="goal-input" placeholder="e.g. Learn CSS Flexbox..." autocomplete="off" required>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </form>
+            <div class="goals-list-container">
+              <ul id="goals-list" class="goals-list">
+                <!-- Goals will be injected by JavaScript -->
+              </ul>
+              <div id="goals-empty-state" class="goals-empty-state hidden">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>All goals completed! Add a new goal to keep leveling up.</p>
+              </div>
+            </div>
+            <div class="goals-footer">
+              <span id="goals-counter">0 goals remaining</span>
+              <button id="clear-goals-btn" class="text-btn">Clear All</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Send a <span class="gradient-text">Message</span></h2>
+          <p class="section-desc">Have a suggestion, question, or just want to say hi? Leave a message below!</p>
+        </div>
+
+        <div class="contact-card-wrapper">
+          <div class="contact-card glass-card">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name"><i class="fa-regular fa-user"></i> Your Name</label>
+                  <input type="text" id="contact-name" placeholder="Alex Johnson" required>
+                  <span class="error-msg" id="name-error">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email"><i class="fa-regular fa-envelope"></i> Email Address</label>
+                  <input type="email" id="contact-email" placeholder="alex@example.com" required>
+                  <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject"><i class="fa-solid fa-heading"></i> Subject</label>
+                <input type="text" id="contact-subject" placeholder="Feedback on your first website!" required>
+                <span class="error-msg" id="subject-error">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message"><i class="fa-regular fa-comment-dots"></i> Message</label>
+                <textarea id="contact-message" rows="4" placeholder="Write your encouraging message or feedback here..."
+                  required></textarea>
+                <span class="error-msg" id="message-error">Please enter a message (at least 5 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full submit-btn" id="contact-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-icon">🚀</span>
+          <span class="logo-text">My First <span class="gradient-text">Website</span></span>
+        </a>
+        <p class="footer-tagline">Crafted with passion, modern CSS, and clean JavaScript.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#playground">Playground</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://codepen.io" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="CodePen">
+          <i class="fa-brands fa-codepen"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="Twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+          aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>&copy; <span id="current-year"></span> My First Website. Built for learning and sharing with the world.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Pop-up -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
